@@ -8,7 +8,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="css/styles.css" />
-    <title>Find | Kakao Clone</title>
+    <title>Friends | Kakao Clone</title>
   </head>
   <body>
     <div class="status-bar">
@@ -26,7 +26,7 @@
     <!--status var end-->
     <header class="header">
       <div class="header__header-column">
-        <h1 class="header__title">Find</h1>
+        <h1 class="header__title">Friends</h1>
       </div>
       <div class="header__header-column">
         <span class="header__icon">
@@ -35,69 +35,66 @@
         <span class="header__icon">
           <i class="fas fa-cog"></i>
         </span>
-        <span class="header__icon"></span>
-        <span class="header__icon"></span>
       </div>
     </header>
-    <!-- end header -->
+    <!-- end heaer -->
 
-    <!-- 상단 아이콘 4개-->
-    <main class="find">
-      <header class="find_header">
-        <ul class="find__header-list">
-          <li class="find__header-btn header-btn">
-            <span class="header-btn__icon">
-              <i class="fas fa-qrcode fa-2x"></i>
-            </span>
-            <span class="header-btn__title">QR_CODE</span>
-          </li>
-          <li class="find__header-btn header-btn">
-            <span class="header-btn__icon">
-              <i class="fas fa-user-plus fa-2x"></i
-            ></span>
-            <span class="header-btn__title">Add by Contacts</span>
-          </li>
-          <li class="find__header-btn header-btn">
-            <span class="header-btn__icon">
-              <i class="fas fa-passport fa-2x"></i
-            ></span>
-            <span class="header-btn__title">Add by ID</span>
-          </li>
-          <li class="find__header-btn header-btn">
-            <span class="header-btn__icon">
-              <i class="fas fa-envelope fa-2x"></i
-            ></span>
-            <span class="header-btn__title">invite</span>
-          </li>
-        </ul>
+    <!-- my avatar -->
+    <main class="friends">
+      <header class="friends__header">
+        <div class="friends__friend friend">
+          <div class="friend__column">
+            <img src="images/yang.jpg" class="g-avatar friend__avatar" />
+            <div class="friend__content">
+              <span class="friend__name">Yang</span>
+              <span class="friend__status">so cool</span>
+            </div>
+          </div>
+        </div>
       </header>
-      <!-- end header-->
+      <!--my avatar end-->
 
-      <ul class="find__recommended">
-        <h5 class="find__title">
-          Recommended Friends
-        </h5>
-        <li class="find__friend friend friend--lg">
+      <!-- 플러스 친구-->
+      <div class="friends__plus">
+        <h5 class="friends__title">Plus Friends</h5>
+        <div class="friends__friend friend">
+          <div class="friend__column">
+            <img src="images/kakao.jpg" class="friend__avatar" />
+            <div class="friend__content">
+              <span class="friend__name">카카오플러스</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 친구목록 -->
+      <ul class="friends__list">
+        <h5 class="friends__title">Friends 14</h5>
+        <li class="friends__friend friend friend--lg">
           <div class="friend__column">
             <img src="images/park.jpg" class="friend__avatar" />
             <div class="friend__content">
               <span class="friend__name">Park</span>
+              <span class="friend__status">go to school</span>
             </div>
           </div>
-          <div class="friend__column">
-            <div class="friend__add-btn">
-              <i class="fas fa-user-plus"></i>
+          <div class="friend">
+            <div class="friend__now-listening">
+              <span>FTISLAND-지독하게</span>
+              <i class="fas fa-play"></i>
             </div>
           </div>
         </li>
       </ul>
     </main>
+    <!-- end main-->
 
+    <!-- 하단 -->
     <nav class="nav">
       <ul class="nav__list">
         <li class="nav__list-item">
           <a href="friends.html" class="nav__list-link">
-            <i class="far fa-user"></i>
+            <i class="fas fa-user"></i>
           </a>
         </li>
         <li class="nav__list-item">
